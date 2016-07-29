@@ -25,6 +25,16 @@ from nacl.bindings.crypto_hash import (
     crypto_hash, crypto_hash_BYTES, crypto_hash_sha256,
     crypto_hash_sha256_BYTES, crypto_hash_sha512, crypto_hash_sha512_BYTES,
 )
+from nacl.bindings.crypto_auth import (
+    crypto_auth, crypto_auth_BYTES, crypto_auth_verify,
+    crypto_auth_hmacsha256, crypto_auth_hmacsha256_BYTES, crypto_auth_hmacsha256_verify,
+    crypto_auth_hmacsha512256, crypto_auth_hmacsha512256_BYTES, crypto_auth_hmacsha512256_verify
+)
+from nacl.bindings.crypto_salsa import (
+     crypto_core_hsalsa20_outputBYTES, crypto_core_hsalsa20_inputBYTES,
+     crypto_core_hsalsa20_keyBYTES, crypto_core_hsalsa20_constBYTES,
+     crypto_core_hsalsa20
+)
 from nacl.bindings.crypto_scalarmult import (
     crypto_scalarmult, crypto_scalarmult_BYTES, crypto_scalarmult_SCALARBYTES,
     crypto_scalarmult_base
@@ -64,6 +74,16 @@ __all__ = [
     "crypto_hash",
     "crypto_hash_sha256",
     "crypto_hash_sha512",
+
+    "crypto_auth_BYTES",
+    "crypto_auth_hmacsha256_BYTES",
+    "crypto_auth_hmacsha512256_BYTES",
+    "crypto_auth",
+    "crypto_auth_hmacsha256",
+    "crypto_auth_hmacsha512256",
+    "crypto_auth_verify",
+    "crypto_auth_hmacsha256_verify",
+    "crypto_auth_hmacsha512256_verify",
 
     "crypto_scalarmult_BYTES",
     "crypto_scalarmult_SCALARBYTES",
